@@ -2,6 +2,12 @@ body {
     background-color: #f6f4e9;
 }
 
+.container-fluid{
+
+ color: black;
+
+}
+
 .custom-header{
 
     background-color: red;
