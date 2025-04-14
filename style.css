@@ -1,6 +1,10 @@
-
 body{
     background-color: #f6f4e9;
+}
+
+.navbar{
+    background-color: #fbf2c4;
+    margin-bottom: 20px;
 }
 
 .navbar-nav .nav-link{
