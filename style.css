@@ -2,10 +2,6 @@ body{
     background-color: #f6f4e9;
 }
 
-.navbar{
-    background-color: #fbf2c4;
-}
-
 .navbar-nav .nav-link{
     color: #000;
     font-size: 1.1rem;
