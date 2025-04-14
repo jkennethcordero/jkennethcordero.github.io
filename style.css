@@ -4,8 +4,6 @@ body{
 
 .navbar{
     background-color: #fbf2c4;
-    margin-bottom: 20px;
-    position: fixed;
 }
 
 .navbar-nav .nav-link{
