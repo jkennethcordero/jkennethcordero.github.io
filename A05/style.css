@@ -1,0 +1,33 @@
+body {
+
+    background-color: #f6f4e9;
+    color: black;
+    margin: 0;
+    padding: 0;
+    
+
+}
+
+.intro-banner{
+
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+        url(tinipak.jpg);
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 100px 0;
+    margin-bottom: 30px;
+}
+
+
+.custom-footer {
+
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+        url(tinipak\ 4.jpg);
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 100px 0;
+    margin-bottom: 30px;
+
+}
