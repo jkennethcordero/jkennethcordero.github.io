@@ -1,0 +1,7 @@
+body {
+    background-color: #f6f4e9;
+}
+
+.card:hover {
+    transform: scale(1.03);
+  }
