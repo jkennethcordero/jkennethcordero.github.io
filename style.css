@@ -35,6 +35,7 @@ body{
 }
 
 #projects {
+    color: #f6f4e9;
     padding-top: 6rem; 
     background-color: #006e6e;
     z-index: 5;
