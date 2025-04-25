@@ -37,14 +37,23 @@ body{
 #about {
     color:  #f6f4e9;
     padding-top: 6rem; 
-    background-color: #006e6e;
+    background-color: #93bebe;
     z-index: 5;
     position: relative;
-    border-radius: 0; 
-    border-top-left-radius: 15px;
-    border-top-right-radius: 15px;
-    overflow: hidden; 
 }
+
+#skills i {
+    font-size: 3rem;
+    margin: 15px;
+    color: #333;
+    justify-content: center;
+}
+
+#skills i:hover {
+    transform: scale(1.1);
+    transition: all 0.3s ease;
+}
+
 
 #projects {
     color:  #f6f4e9;
@@ -52,8 +61,4 @@ body{
     background-color: #006e6e;
     z-index: 5;
     position: relative;
-    border-radius: 0; 
-    border-top-left-radius: 15px;
-    border-top-right-radius: 15px;
-    overflow: hidden; 
 }
