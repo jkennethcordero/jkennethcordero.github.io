@@ -34,6 +34,18 @@ body{
     transform: scale(1.03);
 }
 
+#about {
+    color:  #f6f4e9;
+    padding-top: 6rem; 
+    background-color: #006e6e;
+    z-index: 5;
+    position: relative;
+    border-radius: 0; 
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    overflow: hidden; 
+}
+
 #projects {
     padding-top: 6rem; 
     background-color: #006e6e;
