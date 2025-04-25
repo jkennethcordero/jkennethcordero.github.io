@@ -1,6 +1,9 @@
 body{
     margin: 0;
     background-color: #f6f4e9;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-style: normal;
     scroll-behavior: smooth;
 }
 
@@ -16,10 +19,9 @@ body{
 }
 
 #about {
-    color:  #f6f4e9;
+    color: #333;
     padding-top: 6rem; 
     background-color: #93bebe;
-    z-index: 5;
     position: relative;
 }
 
@@ -37,10 +39,9 @@ body{
 }
 
 #projects {
-    color:  #f6f4e9;
+    color: #333;
     padding-top: 6rem; 
     background-color: #93bebe;
-    z-index: 5;
     position: relative;
 }
 
