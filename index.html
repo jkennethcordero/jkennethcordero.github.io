@@ -12,6 +12,29 @@
         integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="style.css">
+    <script>
+        function showMoreProjects() {
+            var hiddenProjects = document.getElementById("hiddenProjects");
+            hiddenProjects.style.display = "flex";
+
+            var showMoreLink = document.getElementById("showMoreLink");
+            showMoreLink.style.display = "none";
+            
+            var showLessLink = document.getElementById("showLessLink");
+            showLessLink.style.display = "block";
+        }
+        
+        function showLessProjects() {
+            var hiddenProjects = document.getElementById("hiddenProjects");
+            hiddenProjects.style.display = "none";
+
+            var showMoreLink = document.getElementById("showMoreLink");
+            showMoreLink.style.display = "block";
+
+            var showLessLink = document.getElementById("showLessLink");
+            showLessLink.style.display = "none";   
+        }
+    </script>
 </head>
 
 <body>
@@ -138,6 +161,59 @@
                     </div>
                 </div>
             </div>
+
+            <div class="row g-4 px-3 id="hiddenProjects">
+             <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="card shadow h-100">
+                    <img src="..." class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title display fw-bold">A08</h5>
+                        <p class="card-text">HTML website.</p>
+                        <a href="#" class="btn btn-primary">View</a>
+                    </div>
+                </div>
+             </div>
+           </div>
+
+             <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="card shadow h-100">
+                    <img src="..." class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title display fw-bold">A09</h5>
+                        <p class="card-text">HTML website.</p>
+                        <a href="#" class="btn btn-primary">View</a>
+                    </div>
+                </div>
+             </div>
+           </div>
+
+          <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="card shadow h-100">
+                    <img src="..." class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title display fw-bold">A10</h5>
+                        <p class="card-text">HTML website.</p>
+                        <a href="#" class="btn btn-primary">View</a>
+                    </div>
+                </div>
+             </div>
+           </div>
+
+          <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="card shadow h-100">
+                    <img src="..." class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title display fw-bold">A11</h5>
+                        <p class="card-text">HTML website.</p>
+                        <a href="#" class="btn btn-primary">View</a>
+                    </div>
+                </div>
+             </div>
+           </div>
+
+        <a id="showMoreLink" class="more-less-link" onclick="showMoreProjects()">Show More</a>
+        <a id="showLessLink" class="more-less-link" onclick="showLessProjects()" style="display: none;">Show Less</a>
+            
     </section>
 
 
