@@ -65,3 +65,16 @@ body {
 .card:hover {
     transform: scale(1.03);
 }
+
+#connect i {
+    font-size: 3rem;
+    margin: 15px;
+    color: #333;
+    justify-content: center;
+}
+
+#connect i:hover {
+    color:#006e6e;
+    transform: scale(1.1);
+    transition: all 0.3s ease;
+}
