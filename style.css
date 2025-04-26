@@ -75,6 +75,7 @@ body {
 }
         
 .more-less-link:hover {
+    color: #f6f4e9;
     text-decoration: underline;
 }
 
