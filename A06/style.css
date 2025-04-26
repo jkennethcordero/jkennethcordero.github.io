@@ -1,0 +1,36 @@
+body {
+    background-image: url(cover.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    color: #f6f4e9;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;  
+
+}
+
+.container {
+    color: #f6f4e9;
+}
+
+.more-less-link {
+    color: #f6f4e9;
+    display: block;
+    margin: 30px auto 0;
+    text-align: center;
+    cursor: pointer;
+}
+
+.more-less-link:hover {
+    text-decoration: underline;
+    
+}
+
+.about {
+    color: #f6f4e9; 
+}
+
+.card:hover {
+    transform: scale(1.03);
+}
