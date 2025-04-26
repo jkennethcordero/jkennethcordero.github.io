@@ -66,6 +66,18 @@ body {
     transform: scale(1.03);
 }
 
+.more-less-link {
+    color: black;
+    display: block;
+    margin: 30px auto 0;
+    text-align: center;
+    cursor: pointer;
+}
+        
+.more-less-link:hover {
+    text-decoration: underline;
+}
+
 #connect i {
     font-size: 3rem;
     margin: 15px;
