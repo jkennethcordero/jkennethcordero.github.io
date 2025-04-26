@@ -1,5 +1,8 @@
 body {
+    margin: 0;
     background-color: #f6f4e9;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
 }
 
 .custom-header{
