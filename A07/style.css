@@ -102,4 +102,12 @@ background-color: #3e8e41;
   opacity: 1;
 }
 
+.video,
+.overlay {
+  pointer-events: none;
+}
 
+.btn-close {
+  z-index: 10000;
+  position: relative;
+}
