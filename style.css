@@ -1,130 +1,161 @@
 body {
-    padding-top: 70px;
-    margin: 0;
-    background-color: #f6f4e9;
+    background-color: #af5244;
+    color: #f6f4e9;
     font-family: 'Poppins', sans-serif;
     scroll-behavior: smooth;
-    overflow-x: hidden;
-}
-
-.navbar {
-    background-color: #f6f4e9;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 1000;
-    height: 70px;
 }
 
 html {
-    scroll-padding-top: 70px; 
+  scroll-behavior: smooth;
 }
 
-.navbar-nav .nav-link{
-    color: #000;
-    font-size: 1.1rem;
-    transition: all 0.3s ease-in-out;
+.header {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+
+}
+
+.header .cover {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.header .overlay {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.6);
+    top: 0;
+    left: 0;
+    z-index: 2;
+
+}
+
+.header-navbar {
+    color: #f6f4e9;
+    position: relative;
+    z-index: 3;
+    padding: 20px 0;
+
+}
+
+.header-navbar .navbar-nav .nav-link {
+    color: #f6f4e9;
+    font-size: 500;
+    transition: all 0.3s ease;
     position: relative;
 }
 
-.navbar-nav .nav-link:hover {
-    color:  #93bebe;
+.header-navbar .navbar-nav .nav-link:hover {
+    color: #af5244;
     text-decoration: none;
 }
 
-.navbar-nav .nav-link::after {
+.header-navbar .navbar-nav .nav-link::after {
     content: '';
     display: block;
     width: 0;
     height: 2px;
-    background: #93bebe;
+    background: #af5244;
     transition: width 0.3s ease-in-out;
     position: absolute;
     bottom: 0;
     left: 0;
 }
 
-.navbar-nav .nav-link:hover::after {
+.header-navbar .navbar-nav .nav-link:hover::after {
     width: 100%;
 }
 
 @media screen and (min-width: 1024px) {
-    .navbar-nav .nav-item{
+    .header-navbar .navbar-nav .nav-item {
         padding: 0 1.5rem;
     }
 }
+
 @media (max-width: 991.98px) {
-    .navbar-collapse {
+    .header-navbar .navbar-collapse {
         background-color: #f6f4e9;
         padding: 1rem;
-        box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     }
 
-    .navbar-nav {
+    .header-navbar .navbar-nav {
         display: flex;
         flex-direction: column;
         align-items: flex-start;
     }
 
-    .navbar-nav .nav-item {
+    .header-navbar .navbar-nav .nav-item {
         width: 100%;
         margin: 0.3rem 0;
     }
 
-    .navbar-nav .nav-link {
+    .header-navbar .navbar-nav .nav-link {
         padding: 0.5rem 1rem;
         width: 100%;
     }
 }
 
+.header-content {
+    position: relative;
+    color: #f2e5c3;
+    display: flex;
+    align-items: center;
+    z-index: 3;
+    height: 60vh;
+}
+
 
 #about {
-    color: #333;
-    padding-top: 6rem; 
+    color: #f6f4e9;
+    padding-top: 6rem;
     padding-bottom: 6rem;
-    background-color: #93bebe;
     position: relative;
 }
 
 #skills i {
     font-size: 3rem;
     margin: 15px;
-    color: #333;
+    color: #f6f4e9;
     justify-content: center;
 }
 
 #skills i:hover {
-    color:#006e6e;
+    color: #f2e5c3;
     transform: scale(1.1);
     transition: all 0.3s ease;
 }
 
 #projects {
-    color: #333;
-    padding-top: 6rem; 
+    color: #f6f4e9;
+    padding-top: 6rem;
     padding-bottom: 6rem;
-    background-color: #93bebe;
     position: relative;
 }
 
 .card {
-   background-color: #f6f4e9;
-   height: 100%;
-   display: flex;
-   flex-direction: column;
+    background-color: #f6f4e9;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
 }
 
 .card-img-top {
-   height: 200px; 
-   object-fit: cover; 
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    padding: 1rem;
 }
 
 .card-body {
     flex: 1 1 auto;
-}
-
-.card:hover {
-    transform: scale(1.03);
 }
 
 .more-less-link {
@@ -134,29 +165,30 @@ html {
     text-align: center;
     cursor: pointer;
 }
-        
+
 .more-less-link:hover {
     color: #f6f4e9;
     text-decoration: underline;
 }
 
-#connect i {
+#contact {
+    background-color: #f2e5c3;
+    color: #af5244;
+}
+
+#contact i {
     font-size: 3rem;
     margin: 15px;
     color: #333;
     justify-content: center;
 }
 
-#connect i:hover {
-    color:#006e6e;
+#contact i:hover {
+    color: #006e6e;
     transform: scale(1.1);
     transition: all 0.3s ease;
 }
-.socials {
-    color: #f6f4e9; 
-}
 
-footer {
-    color: #333;
-    background-color: #93bebe;
+.socials {
+    color: #f6f4e9;
 }

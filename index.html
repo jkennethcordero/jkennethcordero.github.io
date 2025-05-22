@@ -1,5 +1,6 @@
 <!doctype html>
 <html lang="en">
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -19,11 +20,11 @@
 
             var showMoreLink = document.getElementById("showMoreLink");
             showMoreLink.style.display = "none";
-            
+
             var showLessLink = document.getElementById("showLessLink");
             showLessLink.style.display = "block";
         }
-        
+
         function showLessProjects() {
             var hiddenProjects = document.getElementById("hiddenProjects");
             hiddenProjects.style.display = "none";
@@ -32,111 +33,113 @@
             showMoreLink.style.display = "block";
 
             var showLessLink = document.getElementById("showLessLink");
-            showLessLink.style.display = "none";   
+            showLessLink.style.display = "none";
         }
     </script>
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg w-100 fixed-top shadow">
-        <div class="container-lg">
-            <a class="navbar-brand" href="#home">Kenneth Cordero</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav mx-auto">
-                    <li class="nav-item">
-                        <a class="nav-link active" href="#home">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#about">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#skills">Skills</a>
-                    </li> 
-                    <li class="nav-item">
-                        <a class="nav-link" href="#projects">Projects</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#connect">Connect</a>
-                    </li>
-                </ul>
+
+    <div id="home" class="header">
+        <img class="cover" src="images/3a4458c7-6e70-4466-8b31-647070038be3.jpg" alt="Cover">
+        <div class="overlay"></div>
+        <nav class="navbar navbar-expand-lg header-navbar">
+            <div class="container">
+                <a class="navbar-brand" href="#home">Kenneth Cordero</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav mx-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#home">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#projects">Projects</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <div class="header-content">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-sm-6 text-center">
+                        <i class="fa-solid fa-code"></i>
+                        <h1 class="display fw-bold">Hi, It's Kenneth Cordero</h1>
+                        <p>IT Student | Aspiring Data Analyst</p>
+                        <button id="btnDownload" class="btn btn-outline-light rounded-5 px-4">Download CV</button>
+                    </div>
+                </div>
             </div>
         </div>
-    </nav>
+    </div>
 
-        <section id="home" class="container p-5">
-            <div class="row align-items-center">
-                <div class="col-sm-6 text-center">
-                    <i class="fa-solid fa-code"></i>
-                    <h1 class="display fw-bold">Hi, It's Kenneth Cordero</h1>
-                    <p>
-                       IT Student | Aspiring Data Analyst 
-                    </p> 
-                    <button id="btnDownload" class="btn btn-outline-dark w-30 rounded-5">Download
-                            CV</button>
-                </div>
-                <div class="col-sm-6 text-center mt-4">
-                    <img src="images/about.jpg" class="w-50" alt="self" style="aspect-ratio: 1 / 1; border-radius: 50%; object-fit: cover;">
-                </div>
+    <section id="about" class="container py-5">
+        <div class="row align-items-center">
+            <div class="col-md-5">
+                <img src="images/sub.png" alt="">
             </div>
-            </section>
+            <div class="col-md-7">
+                <h4 class="display fw-bold mb-5">ABOUT</h4>
+                <p>A highly organized and hardworking individual with responsible skills.</p>
+                <p>2nd year student at Polytechnic University of the Philippines Sto. Tomas Branch, focusing
+                    in Information Technology.</p>
+                <p> DataCamp Donates Scholar and currently taking Data Analytics courses.</p>
+                <p> Participated in ISKOnnovation: The GDSC Ideathon 2024 - Building Start-Ups Workshop</p>
 
-         <section id="about" class="container-fluid py-5">
-           <div class="row">
-            <div class="col">
-                <h2 class="display fw-bold mb-5 text-center">About</h2>
-                <p class="text-center">
-                    A 2nd year student at <b>Polytechnic University of the Philippines Sto. Tomas Branch</b>, focusing in
-                    <b>Information Technology.</b> 
-                    <br>
-                    Also, a <b>DataCamp Donates Scholar</b> and currently taking <b>Data Analytics</b> courses.
-                </p>
-            </div>
-           </div>
-         </div>
-        </section>
 
-     <section id="skills" class="container my-5 py-5">
-        <h2 class="fw-bold mb-5 text-center">Skills</h2>
-        <div class="row justify-content-center">
-            <div class="col-12 text-center">
-                <div class="skills-container">
-                    <i class="fa-brands fa-python"></i>
-                    <i class="fa-brands fa-js"></i>
-                    <i class="fa-brands fa-bootstrap"></i>
-                    <i class="fa-brands fa-figma"></i>
-                    <i class="fa-brands fa-git-alt"></i>
-                    <i class="fa-solid fa-database"></i>
-                    <i class="fa-brands fa-jira"></i>
+                <div id="skills" class="mt-5">
+                    <h4 class="fw-bold mb-5">SKILLS</h4>
+                    <div class="skills-container">
+                        <i class="fa-brands fa-python"></i>
+                        <i class="fa-brands fa-js"></i>
+                        <i class="fa-brands fa-bootstrap"></i>
+                        <i class="fa-brands fa-figma"></i>
+                        <i class="fa-brands fa-git-alt"></i>
+                        <i class="fa-solid fa-database"></i>
+                        <i class="fa-brands fa-jira"></i>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
-    
-     <section id="projects" class="container-fluid py-5">
-        <h2 class="display fw-bold mb-5 text-center">Projects</h2>
-         <div class="row g-4 px-3">
+
+
+
+    <section id="projects" class="container py-5">
+        <h4 class="display fw-bold mb-5">PROJECTS</h4>
+        <div class="row g-4 px-3">
             <div class="col-12 col-sm-6 col-md-4 col-lg-3">
                 <div class="card shadow h-100">
                     <img src="images/nintendo2.jpg" class="card-img-top" alt="Nintendo">
                     <div class="card-body">
                         <h5 class="card-title display fw-bold">A04</h5>
                         <p class="card-text">Nintendo Switch 2</p>
-                        <a href="A04/index.html" class="btn btn-primary">View</a>
+                        <a href="A04/index.html">
+                            <button type="button" class="btn btn-secondary btn-sm mt-3 rounded-5 w-25">View</button>
+                        </a>
                     </div>
                 </div>
             </div>
-            
+
             <div class="col-12 col-sm-6 col-md-4 col-lg-3">
                 <div class="card shadow h-100">
                     <img src="images/tinipak.jpg" class="card-img-top" alt="Tinipak">
                     <div class="card-body">
                         <h5 class="card-title display fw-bold">A05</h5>
                         <p class="card-text">Tinipak River</p>
-                        <a href="A05/index.html" class="btn btn-primary">View</a>
+                        <a href="A05/index.html">
+                            <button type="button" class="btn btn-secondary btn-sm mt-3 rounded-5 w-25">View</button>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -147,109 +150,137 @@
                     <div class="card-body">
                         <h5 class="card-title display fw-bold">A06</h5>
                         <p class="card-text">Nadine Lustre</p>
-                        <a href="A06/index.html" class="btn btn-primary">View</a>
+                        <a href="A06/index.html">
+                            <button type="button" class="btn btn-secondary btn-sm mt-3 rounded-5 w-25">View</button>
+                        </a>
                     </div>
                 </div>
             </div>
 
-              <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
                 <div class="card shadow h-100">
                     <img src="images/Rick and Morty.jpg" class="card-img-top" alt="Cover">
                     <div class="card-body">
                         <h5 class="card-title display fw-bold">A07</h5>
                         <p class="card-text">Rick and Morty API</p>
-                        <a href="A07/index.html" class="btn btn-primary">View</a>
+                        <a href="A07/index.html">
+                            <button type="button" class="btn btn-secondary btn-sm mt-3 rounded-5 w-25">View</button>
+                        </a>
                     </div>
                 </div>
             </div>
         </div>
 
-            <div class="row g-4 px-3 mt-4" id="hiddenProjects" style="display:none;">
-             <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+        <div class="row g-4 px-3 mt-4" id="hiddenProjects" style="display:none;">
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
                 <div class="card shadow h-100">
                     <img src="..." class="card-img-top" alt="...">
                     <div class="card-body">
                         <h5 class="card-title display fw-bold">A08</h5>
                         <p class="card-text">HTML website.</p>
-                        <a href="#" class="btn btn-primary">View</a>
+                        <a href="#">
+                            <button type="button" class="btn btn-secondary btn-sm mt-3 rounded-5 w-25">View</button>
+                        </a>
                     </div>
                 </div>
-             </div>
+            </div>
 
-             <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
                 <div class="card shadow h-100">
                     <img src="..." class="card-img-top" alt="...">
                     <div class="card-body">
                         <h5 class="card-title display fw-bold">A09</h5>
                         <p class="card-text">HTML website.</p>
-                        <a href="#" class="btn btn-primary">View</a>
+                        <a href="#">
+                            <button type="button" class="btn btn-secondary btn-sm mt-3 rounded-5 w-25">View</button>
+                        </a>
                     </div>
                 </div>
-             </div>
+            </div>
 
-          <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
                 <div class="card shadow h-100">
                     <img src="..." class="card-img-top" alt="...">
                     <div class="card-body">
                         <h5 class="card-title display fw-bold">A10</h5>
                         <p class="card-text">HTML website.</p>
-                        <a href="#" class="btn btn-primary">View</a>
+                        <a href="#">
+                            <button type="button" class="btn btn-secondary btn-sm mt-3 rounded-5 w-25">View</button>
+                        </a>
                     </div>
                 </div>
-             </div>
-                
-          <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+            </div>
+
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
                 <div class="card shadow h-100">
                     <img src="..." class="card-img-top" alt="...">
                     <div class="card-body">
                         <h5 class="card-title display fw-bold">A11</h5>
                         <p class="card-text">HTML website.</p>
-                        <a href="#" class="btn btn-primary">View</a>
+                        <a href="#">
+                            <button type="button" class="btn btn-secondary btn-sm mt-3 rounded-5 w-25">View</button>
+                        </a>
                     </div>
-                </div>
-             </div>
-           </div>
-         
-      <div class="text-center mt-4">
-        <a id="showMoreLink" class="more-less-link" onclick="showMoreProjects()">Show More</a>
-        <a id="showLessLink" class="more-less-link" onclick="showLessProjects()" style="display:none;">Show Less</a>
-     </div>   
-    </section>
-
-
-     <section id="connect" class="container my-5 py-5">
-          <h2 class="display fw-bold mb-5 text-center">Connect</h2>
-         <div class="row">
-           <div class="col-12 text-center">
-                <div class="connect-container">
-                <a href="https://facebook.com/johnkennethzxs" class="socials" target="_blank">
-                           <i class="fa-brands fa-square-facebook"></i>
-                </a>
-                <a href="https://www.linkedin.com/in/john-kenneth-cordero-388a34290/" class="socials" target="_blank">
-                           <i class="fa-brands fa-linkedin"></i>
-                </a>
-                <a href="https://github.com/jkennethcordero/jkennethcordero.github.io" class="socials" target="_blank">
-                            <i class="fa-brands fa-square-github"></i>
-                </a>
-                <a href="https://boxd.it/9f6A7" class="socials" target="_blank">
-                           <i class="fa-brands fa-square-letterboxd"></i>
-                </a>
                 </div>
             </div>
         </div>
-      </section>
 
-      <footer class="container-fluid py-3">
-       <div class="row">
-        <div class="col text-center">
-          <h6>© 2025 KENNETH CORDERO. ALL RIGHTS RESERVED.</h6>
+        <div class="text-center mt-4">
+            <a id="showMoreLink" class="more-less-link" onclick="showMoreProjects()">Show More</a>
+            <a id="showLessLink" class="more-less-link" onclick="showLessProjects()" style="display:none;">Show
+                Less</a>
         </div>
-      </div>
-    </footer>
- 
+    </section>
+
+
+
+
+    <div id="contact" class="container-fluid my-5 py-5">
+        <h4 class="display fw-bold mb-5 text-center">CONTACT</h4>
+        <div class="row">
+            <div class="col-12 text-center">
+                <div class="connect-container">
+                    <a href="https://facebook.com/johnkennethzxs" class="socials" target="_blank">
+                        <i class="fa-brands fa-square-facebook"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/john-kenneth-cordero-388a34290/" class="socials"
+                        target="_blank">
+                        <i class="fa-brands fa-linkedin"></i>
+                    </a>
+                    <a href="https://github.com/jkennethcordero/jkennethcordero.github.io" class="socials"
+                        target="_blank">
+                        <i class="fa-brands fa-square-github"></i>
+                    </a>
+                    <a href="https://boxd.it/9f6A7" class="socials" target="_blank">
+                        <i class="fa-brands fa-square-letterboxd"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col text-center">
+                <h6>© 2025 KENNETH CORDERO. ALL RIGHTS RESERVED.</h6>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
 </body>
 
 </html>
+
+
+<script>
+  const colors = {
+    "Alive": "#B2E2B2",
+    "Dead": "#FFB3A7",
+    "unknown": "#DCD0C0"
+  };
+
+ 
+</script>
