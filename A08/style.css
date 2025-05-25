@@ -1,0 +1,117 @@
+/*PUT YOUR CUSTOM STYLE HERE*/
+
+/*!This style is important, do not override!*/
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	
+	color: #f6f4e9;
+	font-family: 'Satoshi', sans-serif;
+	scroll-behavior: smooth;
+}
+
+html, body {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+.keyart,
+.keyart_layer {
+  max-width: 100vw;
+}
+
+.main-content {
+	background-color: #030303;
+}
+
+h1 {
+	position: relative;
+	font-size: 10rem;
+	font-weight: 500;
+}
+
+p {
+	font-size: 1rem;
+}
+
+.autoRotate {
+	animation: autoRotateAnimation;
+	animation-timeline: view();
+}
+
+@keyframes autoRotateAnimation {
+	from {
+		transform: rotate(0deg);
+	}
+
+	to {
+		transform: rotate(360deg);
+	}
+}
+
+.split img {
+	opacity: 0.5;
+	transition: opacity 0.5s ease;
+	width: 100%;
+	display: block;
+	position: relative;
+}
+
+.split:hover img {
+	opacity: 1;
+}
+
+.text {
+	opacity: 0;
+	position: absolute;
+	bottom: 10px;
+	left: 50%;
+	color: #f6f4e9;
+	transform: translateX(-50%);
+	transition: opacity 0.5s ease;
+}
+
+.split:hover .text {
+	opacity: 1;
+}
+
+.grid-box {
+	min-height: 300px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	border: 1px solid #222;
+}
+
+.grid-box img {
+	opacity: 0.5;
+	transition: opacity 0.5s ease;
+	width: 100%;
+	display: block;
+	position: relative;
+}
+
+.grid-box:hover img {
+	opacity: 1;
+}
+
+.overlay-text {
+	opacity: 0;
+	position: absolute;
+	bottom: 10px;
+	left: 50%;
+	color: #f6f4e9;
+	transform: translateX(-50%);
+	transition: opacity 0.5s ease;
+}
+
+.grid-box:hover .overlay-text {
+	opacity: 1;
+}
+

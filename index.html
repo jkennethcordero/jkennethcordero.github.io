@@ -4,15 +4,17 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Personal Portfolio</title>
-    <link rel="icon" href="images/website logo.png">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <title>Portfolio Website</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+    <link href="https://api.fontshare.com/v2/css?f[]=satoshi@400,500,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
         integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=arrow_forward" />
     <link rel="stylesheet" href="style.css">
+
     <script>
         function showMoreProjects() {
             var hiddenProjects = document.getElementById("hiddenProjects");
@@ -39,93 +41,107 @@
 </head>
 
 <body>
-
     <div id="home" class="header">
-        <img class="cover" src="images/3a4458c7-6e70-4466-8b31-647070038be3.jpg" alt="Cover">
+        <img class="cover" src="images/grainy.jpg" alt="Cover">
         <div class="overlay"></div>
-        <nav class="navbar navbar-expand-lg header-navbar">
-            <div class="container">
-                <a class="navbar-brand" href="#home">Kenneth Cordero</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav mx-auto">
-                        <li class="nav-item">
-                            <a class="nav-link active" href="#home">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#about">About</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#projects">Projects</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#contact">Contact</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-
         <div class="header-content">
             <div class="container">
-                <div class="row justify-content-center">
-                    <div class="col-sm-6 text-center">
-                        <i class="fa-solid fa-code"></i>
-                        <h1 class="display fw-bold">Hi, It's Kenneth Cordero</h1>
-                        <p>IT Student | Aspiring Data Analyst</p>
-                        <button id="btnDownload" class="btn btn-outline-light rounded-5 px-4">Download CV</button>
+                <div class="row justify-content-start">
+                    <div class="col-sm-6">
+                        <h1 class="display-1 fw-bold">Build. <i>Create.</i> Innovate.</h1>
+                        <p>Portfolio Website by John Kenneth Cordero</p>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 
-    <section id="about" class="container py-5">
-        <div class="row align-items-center">
-            <div class="col-md-5">
-                <img src="images/sub.png" alt="">
+
+    <div class="container py-5" id="overview">
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <div class="display-4 fw-bold  mb-3 mt-5">John Kenneth Cordero</div>
+                <p>IT Student | Web Designer</p>
+                <div class="mt-4">
+                    <a href="https://www.linkedin.com/in/john-kenneth-cordero-388a34290/" class="socials" target="_blank">
+                        <i class="fa-brands fa-linkedin-in"></i>
+                    </a>
+                    <a href="https://x.com/jkennethcordero" class="socials" target="_blank">
+                        <i class="fa-brands fa-x-twitter"></i>
+                    </a>
+                    <a href="https://github.com/jkennethcordero/jkennethcordero.github.io.git" class="socials" target="_blank">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+                    <a href="https://boxd.it/9f6A7" class="socials" target="_blank">
+                        <i class="fa-brands fa-letterboxd"></i>
+                    </a>
+                </div>
             </div>
-            <div class="col-md-7">
-                <h4 class="display fw-bold mb-5">ABOUT</h4>
-                <p>A highly organized and hardworking individual with responsible skills.</p>
-                <p>2nd year student at Polytechnic University of the Philippines Sto. Tomas Branch, focusing
-                    in Information Technology.</p>
-                <p> DataCamp Donates Scholar and currently taking Data Analytics courses.</p>
-                <p> Participated in ISKOnnovation: The GDSC Ideathon 2024 - Building Start-Ups Workshop</p>
 
+            <div class="col-md-6">
+                <img src="images/0cde9afc-a9f9-4bb9-bb91-a2d1ec79513e.jpg" class="w-100 rounded-5">
+            </div>
+        </div>
+        <hr>
 
-                <div id="skills" class="mt-5">
-                    <h4 class="fw-bold mb-5">SKILLS</h4>
-                    <div class="skills-container">
-                        <i class="fa-brands fa-python"></i>
-                        <i class="fa-brands fa-js"></i>
-                        <i class="fa-brands fa-bootstrap"></i>
-                        <i class="fa-brands fa-figma"></i>
-                        <i class="fa-brands fa-git-alt"></i>
-                        <i class="fa-solid fa-database"></i>
-                        <i class="fa-brands fa-jira"></i>
+        <div class="container py-5" id="about">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="h1 display fw-bold mb-3">About</div>
+                    <p>I am <b>John Kenneth Cordero</b>, a highly organized and hardworking individual with a passion in
+                        web
+                        design. Currently, 2nd year
+                        student at
+                        Polytechnic University of the Philippines Sto. Tomas Branch, focusing in Information Technology
+                        and
+                        also a
+                        DataCamp Donates Scholar. Also, participated in ISKOnnovation: The GDSC Ideathon 2024 - Building
+                        Start-Ups
+                        Workshop.</p>
+
+                    <div class="display fw-bold h1 mt-5 mb-3">Skills</div>
+                    <p>404 Not Found</p>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="timeline">
+                        <div class="content">
+                            <h5>2025</h5>
+                            <p>Became a DataCamp Donates Scholar.</p>
+                        </div>
+                    </div>
+                    <div class="timeline">
+                        <div class="content">
+                            <h5>2024</h5>
+                            <p>Joined ISKOnnovation: The GDSC Ideathon.</p>
+                        </div>
+                    </div>
+                    <div class="timeline">
+                        <div class="content">
+                            <h5>2023</h5>
+                            <p>Started IT journey at Polytechnic University of the Philippines Sto. Tomas Branch.</p>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
+    </div>
+    <hr>
 
 
-
-    <section id="projects" class="container py-5">
-        <h4 class="display fw-bold mb-5">PROJECTS</h4>
+    <section id="projects" class="container p-5">
+        <div class="h1 display fw-bold mb-5">Projects</div>
         <div class="row g-4 px-3">
             <div class="col-12 col-sm-6 col-md-4 col-lg-3">
                 <div class="card shadow h-100">
-                    <img src="images/nintendo2.jpg" class="card-img-top" alt="Nintendo">
+                    <img src="images/nintendo2.jpg" class="card-img-top rounded-5" alt="Nintendo">
                     <div class="card-body">
-                        <h5 class="card-title display fw-bold">A04</h5>
-                        <p class="card-text">Nintendo Switch 2</p>
+                        <p class="badge">A04</p>
+                        <h5 class="card-title display fw-bold mb-3">Nintendo Switch 2</h5>
                         <a href="A04/index.html">
-                            <button type="button" class="btn btn-secondary btn-sm mt-3 rounded-5 w-25">View</button>
+                            <span class="card-button material-symbols-rounded">
+                                arrow_forward
+                            </span>
                         </a>
                     </div>
                 </div>
@@ -133,12 +149,14 @@
 
             <div class="col-12 col-sm-6 col-md-4 col-lg-3">
                 <div class="card shadow h-100">
-                    <img src="images/tinipak.jpg" class="card-img-top" alt="Tinipak">
+                    <img src="images/tinipak.jpg" class="card-img-top rounded-5" alt="Tinipak">
                     <div class="card-body">
-                        <h5 class="card-title display fw-bold">A05</h5>
-                        <p class="card-text">Tinipak River</p>
+                        <p class="badge">A05</p>
+                        <h5 class="card-title display fw-bold  mb-3">Tinipak River</h5>
                         <a href="A05/index.html">
-                            <button type="button" class="btn btn-secondary btn-sm mt-3 rounded-5 w-25">View</button>
+                            <span class="card-button material-symbols-rounded">
+                                arrow_forward
+                            </span>
                         </a>
                     </div>
                 </div>
@@ -146,12 +164,14 @@
 
             <div class="col-12 col-sm-6 col-md-4 col-lg-3">
                 <div class="card shadow h-100">
-                    <img src="images/nadine.png" class="card-img-top" alt="Nadine Lustre">
+                    <img src="images/nadine.png" class="card-img-top rounded-5" alt="Nadine Lustre">
                     <div class="card-body">
-                        <h5 class="card-title display fw-bold">A06</h5>
-                        <p class="card-text">Nadine Lustre</p>
+                        <p class="badge">A06</p>
+                        <h5 class="card-title display fw-bold mb-3">Nadine Lustre</h5>
                         <a href="A06/index.html">
-                            <button type="button" class="btn btn-secondary btn-sm mt-3 rounded-5 w-25">View</button>
+                            <span class="card-button material-symbols-rounded">
+                                arrow_forward
+                            </span>
                         </a>
                     </div>
                 </div>
@@ -159,12 +179,14 @@
 
             <div class="col-12 col-sm-6 col-md-4 col-lg-3">
                 <div class="card shadow h-100">
-                    <img src="images/Rick and Morty.jpg" class="card-img-top" alt="Cover">
+                    <img src="images/Rick and Morty.jpg" class="card-img-top rounded-5" alt="Cover">
                     <div class="card-body">
-                        <h5 class="card-title display fw-bold">A07</h5>
-                        <p class="card-text">Rick and Morty API</p>
+                        <p class="badge">A07</p>
+                        <h5 class="card-title display fw-bold mb-3">Rick and Morty API</h5>
                         <a href="A07/index.html">
-                            <button type="button" class="btn btn-secondary btn-sm mt-3 rounded-5 w-25">View</button>
+                            <span class="card-button material-symbols-rounded">
+                                arrow_forward
+                            </span>
                         </a>
                     </div>
                 </div>
@@ -174,113 +196,39 @@
         <div class="row g-4 px-3 mt-4" id="hiddenProjects" style="display:none;">
             <div class="col-12 col-sm-6 col-md-4 col-lg-3">
                 <div class="card shadow h-100">
-                    <img src="..." class="card-img-top" alt="...">
+                    <img src="images/squad.jpg" class="card-img-top rounded-5" alt="Nadine Lustre">
                     <div class="card-body">
-                        <h5 class="card-title display fw-bold">A08</h5>
-                        <p class="card-text">HTML website.</p>
-                        <a href="#">
-                            <button type="button" class="btn btn-secondary btn-sm mt-3 rounded-5 w-25">View</button>
-                        </a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-                <div class="card shadow h-100">
-                    <img src="..." class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title display fw-bold">A09</h5>
-                        <p class="card-text">HTML website.</p>
-                        <a href="#">
-                            <button type="button" class="btn btn-secondary btn-sm mt-3 rounded-5 w-25">View</button>
-                        </a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-                <div class="card shadow h-100">
-                    <img src="..." class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title display fw-bold">A10</h5>
-                        <p class="card-text">HTML website.</p>
-                        <a href="#">
-                            <button type="button" class="btn btn-secondary btn-sm mt-3 rounded-5 w-25">View</button>
-                        </a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-                <div class="card shadow h-100">
-                    <img src="..." class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title display fw-bold">A11</h5>
-                        <p class="card-text">HTML website.</p>
-                        <a href="#">
-                            <button type="button" class="btn btn-secondary btn-sm mt-3 rounded-5 w-25">View</button>
+                        <p class="badge">A08</p>
+                        <h5 class="card-title display fw-bold mb-3">Alien Force Parallax</h5>
+                        <a href="A08/banner.html">
+                            <span class="card-button material-symbols-rounded">
+                                arrow_forward
+                            </span>
                         </a>
                     </div>
                 </div>
             </div>
         </div>
 
-        <div class="text-center mt-4">
+        <div class="text-start mt-4 mb-4">
             <a id="showMoreLink" class="more-less-link" onclick="showMoreProjects()">Show More</a>
             <a id="showLessLink" class="more-less-link" onclick="showLessProjects()" style="display:none;">Show
                 Less</a>
         </div>
     </section>
 
-
-
-
-    <div id="contact" class="container-fluid my-5 py-5">
-        <h4 class="display fw-bold mb-5 text-center">CONTACT</h4>
+    <div id="quote" class="container-fluid p-5">
         <div class="row">
-            <div class="col-12 text-center">
-                <div class="connect-container">
-                    <a href="https://facebook.com/johnkennethzxs" class="socials" target="_blank">
-                        <i class="fa-brands fa-square-facebook"></i>
-                    </a>
-                    <a href="https://www.linkedin.com/in/john-kenneth-cordero-388a34290/" class="socials"
-                        target="_blank">
-                        <i class="fa-brands fa-linkedin"></i>
-                    </a>
-                    <a href="https://github.com/jkennethcordero/jkennethcordero.github.io" class="socials"
-                        target="_blank">
-                        <i class="fa-brands fa-square-github"></i>
-                    </a>
-                    <a href="https://boxd.it/9f6A7" class="socials" target="_blank">
-                        <i class="fa-brands fa-square-letterboxd"></i>
-                    </a>
-                </div>
+            <div class="col-md-6">
+                <div class="h5 mt-3 mb-3">Interested in working with me? Let’s get to work!</div>
+                <p class="display-6 fw-bold">johnkennethpcordero@iskolarngbayan.pup.edu.ph</p>
             </div>
         </div>
 
-        <div class="row">
-            <div class="col text-center">
-                <h6>© 2025 KENNETH CORDERO. ALL RIGHTS RESERVED.</h6>
-            </div>
-        </div>
-    </div>
-
-    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-        crossorigin="anonymous"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
+            crossorigin="anonymous"></script>
 </body>
 
 </html>
-
-
-<script>
-  const colors = {
-    "Alive": "#B2E2B2",
-    "Dead": "#FFB3A7",
-    "unknown": "#DCD0C0"
-  };
-
- 
-</script>
